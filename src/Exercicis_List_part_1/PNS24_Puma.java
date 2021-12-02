@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class PNS24_Puma {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         menuPNS24Puma();
     }
 
@@ -20,12 +20,12 @@ public class PNS24_Puma {
     }
 
 
-    static void menuPNS24Puma() throws IOException {
+    static void menuPNS24Puma() throws Exception {
         String opcio;
         StringBuilder menu = new StringBuilder("");
         Scanner sc = new Scanner(System.in);
 
-        do {/*
+        do {
             System.out.println("---------------- PNS-24 Puma ----------------");
             System.out.println("1. Sistema de navegació Krona");
             System.out.println("2. Sistema d'atac Orion");
@@ -41,8 +41,8 @@ public class PNS24_Puma {
             System.out.println();
             System.out.print("opció?: ");
 
-            menu.delete(0, menu.length());*/
-
+            menu.delete(0, menu.length());
+/*
             menu.append(System.getProperty("line.separator"));
             menu.append("PNS-24 Puma");
             menu.append(System.getProperty("line.separator"));
@@ -68,7 +68,7 @@ public class PNS24_Puma {
             menu.append("50. Tancar el sistema");
             menu.append(System.getProperty("line.separator"));
 
-            System.out.print(MenuConstructorPantalla.constructorPantalla(menu));
+            System.out.print(MenuConstructorPantalla.constructorPantalla(menu));*/
 
             opcio = sc.next();
 
@@ -98,7 +98,7 @@ public class PNS24_Puma {
                     bloquejarPantalla();
                     break;
                 case "7":
-
+                    Kristall.menuKristall();
                     bloquejarPantalla();
                     break;
                 case "10":
